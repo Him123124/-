@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ساس القرار العقارية | Sas Al-Qarar Real Estate – Al Hofuf</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f6f4ee;--ink:#14261f;--mute:#5b6a62;--green:#1c4535;--brass:#a9792a;--line:#d9d4c6;--card:#fff;--on:#f6f4ee;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a15;--ink:#ece8dc;--mute:#9fb0a6;--green:#7fc3a2;--brass:#d6a64f;--line:#27382f;--card:#16241d;--on:#101a15}}
+:root[data-theme="dark"]{--bg:#101a15;--ink:#ece8dc;--mute:#9fb0a6;--green:#7fc3a2;--brass:#d6a64f;--line:#27382f;--card:#16241d;--on:#101a15}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.8 "IBM Plex Sans Arabic",Tahoma,system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:19px;text-decoration:none}
+nav{display:flex;gap:22px;align-items:center;font-size:15px}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--ink)}
+#lang{font:inherit;font-size:14px;background:none;border:1px solid var(--line);color:var(--ink);padding:3px 12px;border-radius:99px;cursor:pointer}
+.hero{padding:72px 0 64px;display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:end}
+h1{font-size:clamp(42px,8vw,92px);line-height:1.1;margin:0;font-weight:700;color:var(--green);letter-spacing:-.01em}
+.hero p{font-size:19px;color:var(--mute);margin:20px 0 28px;max-width:34em}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 24px;border-radius:6px;font-weight:500;text-decoration:none;border:1.5px solid var(--green);background:var(--green);color:var(--on)}
+.btn.alt{background:none;color:var(--green)}
+.proof{border-inline-start:3px solid var(--brass);padding-inline-start:22px}
+.proof b{font-size:64px;line-height:1;display:block;font-weight:700}
+.proof span{color:var(--mute);font-size:15px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:30px;margin:0 0 28px;line-height:1.3}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border:1px solid var(--line);border-radius:4px;background:var(--card)}
+.grid div{padding:26px;border-inline-end:1px solid var(--line)}
+.grid h3{margin:0 0 6px;font-size:20px;color:var(--green)}
+.grid p{margin:0;color:var(--mute);font-size:16px}
+blockquote{margin:0;font-size:22px;line-height:1.7;max-width:34em}
+cite{display:block;margin-top:14px;font-size:15px;color:var(--mute);font-style:normal}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+dl{margin:0}dt{color:var(--mute);font-size:14px;margin-top:16px}dd{margin:0;font-size:19px}
+form{display:grid;gap:12px}
+input,textarea{font:inherit;padding:11px 14px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);width:100%}
+button.btn{font:inherit;font-weight:500;cursor:pointer}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+@media (max-width:760px){.hero,.contact{grid-template-columns:1fr;gap:32px}.hero{padding:44px 0}nav a.hide{display:none}.grid div{border-inline-end:0;border-bottom:1px solid var(--line)}}
+
+::selection{background:var(--brass);color:#fff}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);transition:box-shadow .25s}
+header.scrolled{box-shadow:0 6px 18px -12px rgba(0,0,0,.45)}
+#bar{position:fixed;top:0;inset-inline:0;height:3px;z-index:30;background:var(--brass);transform:scaleX(0);transform-origin:right}
+[dir=ltr] #bar{transform-origin:left}
+nav a{position:relative;padding:2px 0}
+nav a.active{color:var(--ink)}
+nav a.active::after{content:"";position:absolute;inset-inline:0;bottom:-4px;height:2px;background:var(--brass)}
+#lang,#theme{font:inherit;font-size:14px;background:none;border:1px solid var(--line);color:var(--ink);padding:3px 12px;border-radius:99px;cursor:pointer;transition:background .2s,border-color .2s}
+#lang:hover,#theme:hover{border-color:var(--brass);background:var(--card)}
+.btn{transition:transform .2s,box-shadow .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px -10px var(--green)}
+.btn:active{transform:translateY(0)}
+.btn.alt:hover{background:var(--green);color:var(--on)}
+.grid div{transition:background .25s;position:relative}
+.grid div::before{content:"";position:absolute;inset-inline:0;top:0;height:3px;background:var(--brass);transform:scaleX(0);transform-origin:right;transition:transform .3s}
+.grid div:hover::before{transform:scaleX(1)}
+.grid div:hover{background:color-mix(in srgb,var(--brass) 8%,var(--card))}
+.grid div:last-child{border-inline-end:0}
+.hero h1,.hero p,.hero .btns,.proof{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero p{animation-delay:.12s}.hero .btns{animation-delay:.24s}.proof{animation-delay:.36s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.js section.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.js section.reveal.in{opacity:1;transform:none}
+fieldset.chips{border:0;margin:0;padding:0;display:flex;gap:8px;flex-wrap:wrap}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-block;padding:6px 18px;border:1px solid var(--line);border-radius:99px;font-size:15px;background:var(--card);transition:all .2s}
+.chips input:checked+span{background:var(--green);border-color:var(--green);color:var(--on)}
+.chips input:focus-visible+span{outline:3px solid var(--brass);outline-offset:2px}
+input:focus,textarea:focus{border-color:var(--brass);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--brass) 30%,transparent)}
+input.bad,textarea.bad{border-color:#c0392b}
+#st{min-height:1.6em;font-size:15px;color:var(--mute);margin:0}
+#top-btn{position:fixed;inset-inline-start:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:20px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:20}
+#top-btn.show{opacity:1;pointer-events:auto}
+#top-btn:hover{transform:translateY(-3px)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js section.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top" data-ar="ساس القرار العقارية" data-en="Sas Al-Qarar Real Estate">ساس القرار العقارية</a>
+  <nav>
+    <a class="hide" href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+    <a class="hide" href="#reviews" data-ar="آراء العملاء" data-en="Reviews">آراء العملاء</a>
+    <a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+    <button id="theme" type="button" aria-label="Toggle theme">◐</button>
+    <button id="lang" type="button" aria-label="Switch language">English</button>
+  </nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <h1 data-ar="قرارك العقاري، بثقة." data-en="Property decisions, made with confidence.">قرارك العقاري، بثقة.</h1>
+    <p data-ar="مكتب عقاري في الهفوف، الأحساء. بيع وإيجار وإدارة أملاك، مع تعامل واضح من أول تواصل حتى إفراغ الصك."
+       data-en="A real estate office in Al Hofuf, Al-Ahsa. Sales, rentals and property management, with clear dealing from first call to ownership transfer.">مكتب عقاري في الهفوف، الأحساء. بيع وإيجار وإدارة أملاك، مع تعامل واضح من أول تواصل حتى إفراغ الصك.</p>
+    <div class="btns">
+      <a class="btn" href="tel:+966559117177" data-ar="اتصل: 055 911 7177" data-en="Call 055 911 7177">اتصل: 055 911 7177</a>
+      <a class="btn alt" href="https://wa.me/966559117177" data-ar="واتساب" data-en="WhatsApp">واتساب</a>
+    </div>
+  </div>
+  <div class="proof">
+    <b dir="ltr" id="rate" data-v="4.8">4.8</b>
+    <span data-ar="تقييم 99 عميلًا على خرائط جوجل" data-en="from 99 reviews on Google Maps">تقييم 99 عميلًا على خرائط جوجل</span>
+  </div>
+</div>
+
+<section id="services" class="reveal">
+  <h2 data-ar="ما نقدمه" data-en="What we do">ما نقدمه</h2>
+  <div class="grid">
+    <div><h3 data-ar="البيع والشراء" data-en="Buying &amp; selling">البيع والشراء</h3><p data-ar="عرض العقارات، والتفاوض على السعر، ومتابعة الإجراءات حتى نقل الملكية." data-en="Listings, price negotiation, and follow-through until ownership is transferred.">عرض العقارات، والتفاوض على السعر، ومتابعة الإجراءات حتى نقل الملكية.</p></div>
+    <div><h3 data-ar="الإيجار" data-en="Rentals">الإيجار</h3><p data-ar="عقارات للإيجار في الأحساء مع خيارات دفع مرنة." data-en="Properties for rent across Al-Ahsa with flexible payment options.">عقارات للإيجار في الأحساء مع خيارات دفع مرنة.</p></div>
+    <div><h3 data-ar="إدارة الأملاك" data-en="Property management">إدارة الأملاك</h3><p data-ar="إدارة منظمة للعقار والمستأجرين، وسرعة في الاستجابة." data-en="Organised management of your property and tenants, with quick responses.">إدارة منظمة للعقار والمستأجرين، وسرعة في الاستجابة.</p></div>
+  </div>
+</section>
+
+<section id="reviews" class="reveal">
+  <h2 data-ar="ماذا يقول عملاؤنا" data-en="What clients say">ماذا يقول عملاؤنا</h2>
+  <blockquote data-ar="«خدمتهم ممتازة في إدارة العقار وخيارات الدفع المرنة. خدمتهم أسرع وأكثر تنظيمًا من غيرهم، وأنصح بالإيجار من عقاراتهم.»"
+              data-en="“Excellent service managing the property and flexible payment options. Faster and more organised than others. I highly recommend renting from them.”">«خدمتهم ممتازة في إدارة العقار وخيارات الدفع المرنة. خدمتهم أسرع وأكثر تنظيمًا من غيرهم، وأنصح بالإيجار من عقاراتهم.»</blockquote>
+  <cite data-ar="جهاد الأحمر، مراجعة على خرائط جوجل" data-en="Jehad Alahmar, Google Maps review">جهاد الأحمر، مراجعة على خرائط جوجل</cite>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="contact">
+    <div>
+      <h2 data-ar="زورونا أو تواصلوا معنا" data-en="Visit or contact us">زورونا أو تواصلوا معنا</h2>
+      <dl>
+        <dt data-ar="العنوان" data-en="Address">العنوان</dt>
+        <dd data-ar="المزروعية، العمرية، الهفوف 36441" data-en="Al Muzruiyyah, Al Omairiyah, Al Hofuf 36441">المزروعية، العمرية، الهفوف 36441</dd>
+        <dt data-ar="الهاتف" data-en="Phone">الهاتف</dt>
+        <dd dir="ltr" style="text-align:start"><a href="tel:+966559117177">055 911 7177</a></dd>
+      </dl>
+      <p style="margin-top:20px"><a href="https://www.google.com/maps/search/?api=1&query=9H6H%2BVQ+Al+Hofuf" data-ar="افتح الموقع في خرائط جوجل" data-en="Open in Google Maps">افتح الموقع في خرائط جوجل</a></p>
+    </div>
+    <form id="f">
+      <fieldset class="chips" aria-label="Inquiry type">
+        <label><input type="radio" name="t" checked><span data-ar="شراء" data-en="Buy">شراء</span></label>
+        <label><input type="radio" name="t"><span data-ar="بيع" data-en="Sell">بيع</span></label>
+        <label><input type="radio" name="t"><span data-ar="إيجار" data-en="Rent">إيجار</span></label>
+        <label><input type="radio" name="t"><span data-ar="إدارة أملاك" data-en="Management">إدارة أملاك</span></label>
+      </fieldset>
+      <input id="n" required autocomplete="name" placeholder="الاسم" data-ph-ar="الاسم" data-ph-en="Your name">
+      <textarea id="m" rows="4" required placeholder="ماذا تبحث عنه؟ (بيع، شراء، إيجار)" data-ph-ar="ماذا تبحث عنه؟ (بيع، شراء، إيجار)" data-ph-en="What are you looking for? (sale, purchase, rent)"></textarea>
+      <button class="btn" type="submit" data-ar="أرسل عبر واتساب" data-en="Send on WhatsApp">أرسل عبر واتساب</button>
+      <p id="st" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span data-ar="© ساس القرار العقارية، الهفوف، الأحساء" data-en="© Sas Al-Qarar Real Estate, Al Hofuf, Al-Ahsa">© ساس القرار العقارية، الهفوف، الأحساء</span>
+</footer>
+</div>
+
+<button id="top-btn" type="button" aria-label="Back to top">↑</button>
+<script>
+(function(){
+var R=document.documentElement,cur='ar',$=function(i){return document.getElementById(i)};
+R.classList.add('js');
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+function setLang(l){
+  cur=l;R.lang=l;R.dir=l==='ar'?'rtl':'ltr';
+  document.querySelectorAll('[data-ar]').forEach(function(e){e.innerHTML=e.getAttribute('data-'+l)});
+  document.querySelectorAll('[data-ph-ar]').forEach(function(e){e.placeholder=e.getAttribute('data-ph-'+l)});
+  $('lang').textContent=l==='ar'?'English':'العربية';ls('lang',l);
+}
+$('lang').onclick=function(){setLang(cur==='ar'?'en':'ar')};
+if(ls('lang')==='en')setLang('en');
+
+$('theme').onclick=function(){
+  var dark=R.dataset.theme?R.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+  R.dataset.theme=dark?'light':'dark';ls('theme',R.dataset.theme);
+};
+if(ls('theme'))R.dataset.theme=ls('theme');
+
+var hd=document.querySelector('header'),bar=$('bar'),tb=$('top-btn');
+function onScroll(){
+  var y=window.scrollY,h=R.scrollHeight-innerHeight;
+  hd.classList.toggle('scrolled',y>10);
+  bar.style.transform='scaleX('+(h>0?y/h:0)+')';
+  tb.classList.toggle('show',y>600);
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+tb.onclick=function(){scrollTo({top:0,behavior:'smooth'})};
+
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(e){io.observe(e)});
+
+var links=document.querySelectorAll('nav a[href^="#"]'),so=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('section[id]').forEach(function(e){so.observe(e)});
+
+var rate=$('rate'),t0=null;
+function tick(t){t0=t0||t;var p=Math.min((t-t0)/1200,1);rate.textContent=(4.8*(1-Math.pow(1-p,3))).toFixed(1);if(p<1)requestAnimationFrame(tick)}
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)requestAnimationFrame(tick);
+
+var f=$('f'),st=$('st');
+f.oninput=function(e){e.target.classList.remove('bad');st.textContent=''};
+f.onsubmit=function(e){
+  e.preventDefault();
+  var n=$('n'),m=$('m'),ok=true;
+  [n,m].forEach(function(x){if(x.value.trim().length<2){x.classList.add('bad');ok=false}});
+  if(!ok){st.textContent=cur==='ar'?'يرجى تعبئة الاسم والرسالة.':'Please fill in your name and message.';return}
+  var type=f.querySelector('input[name=t]:checked').nextElementSibling.textContent;
+  var msg=(cur==='ar'?'الطلب: ':'Request: ')+type+'\n'+n.value.trim()+': '+m.value.trim();
+  window.open('https://wa.me/966559117177?text='+encodeURIComponent(msg),'_blank','noopener');
+  st.textContent=cur==='ar'?'تم فتح واتساب لإرسال رسالتك.':'WhatsApp opened to send your message.';
+};
+})();
+</script>
+</body>
+</html>
